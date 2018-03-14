@@ -1,0 +1,6 @@
+usr/local/bin/innoket-qt usr/bin
+share/pixmaps/innoket32.xpm usr/share/pixmaps
+share/pixmaps/innoket16.xpm usr/share/pixmaps
+share/pixmaps/innoket128.png usr/share/pixmaps
+debian/innoket-qt.desktop usr/share/applications
+debian/innoket-qt.protocol usr/share/kde4/services/

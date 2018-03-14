@@ -1,0 +1,33 @@
+# /etc/conf.d/innoketd: config file for /etc/init.d/innoketd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/innoketcore/innoket.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/innoketd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/innoketd.pid"
+
+# Where to write innoketd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/innoketd"
+
+# User and group to own innoketd process
+#BITCOIND_USER="innoketcore"
+#BITCOIND_GROUP="innoketcore"
+
+# Path to innoketd executable
+#BITCOIND_BIN="/usr/bin/innoketd"
+
+# Nice value to run innoketd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for bitcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOIND_SIGTERM_TIMEOUT=60
